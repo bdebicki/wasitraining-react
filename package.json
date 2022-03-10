@@ -1,0 +1,59 @@
+{
+  "name": "wasitraining",
+  "version": "0.0.1",
+  "author": "Bartosz Dębicki",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bdebicki/wasitraining-react"
+  },
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  },
+  "scripts": {
+    "start": "webpack serve --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js",
+    "lint:js": "eslint ./src/js --ext .js",
+    "lint:style": "stylelint ./src/scss/**/*.* ./src/scss/*.*"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:js && npm run lint:style",
+      "pre-push": "npm run lint:js && npm run lint:style"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.6.0",
+    "css-minimizer-webpack-plugin": "^3.4.1",
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "husky": "^7.0.4",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.4.2",
+    "postcss-loader": "^6.2.0",
+    "postcss-preset-env": "^6.7.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.43.5",
+    "sass-loader": "^12.2.0",
+    "style-loader": "^3.3.0",
+    "stylelint": "^14.5.3",
+    "stylelint-config-sass-guidelines": "^7.1.0",
+    "stylelint-order": "^5.0.0",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
+  }
+}
