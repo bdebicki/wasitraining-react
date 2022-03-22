@@ -1,8 +1,15 @@
 {
-  "extends": "airbnb-base",
-  "parser": "babel-eslint",
+  "extends": [
+    "airbnb-base",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "parser": "@babel/eslint-parser",
   "plugins": [
-    "import"
+    "import",
+    "react",
+    "react-hooks",
+    "jsx-a11y"
   ],
   "env": {
     "browser": true,
