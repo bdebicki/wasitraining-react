@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 
-const Edition = ({ edition }) => {
+function Edition({ edition }) {
   useEffect(() => {
     const getFestivalData = async () => {
       const { data } = await axios.get(`./assets/data/festivals/edition${edition}.json`);
@@ -18,7 +18,7 @@ const Edition = ({ edition }) => {
       {edition}
     </div>
   );
-};
+}
 
 Edition.propTypes = {
   edition: PropTypes.string.isRequired,

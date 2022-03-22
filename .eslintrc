@@ -1,6 +1,6 @@
 {
   "extends": [
-    "airbnb-base",
+    "airbnb",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended"
   ],
@@ -23,6 +23,6 @@
   ],
   "root": true,
   "rules": {
-    "import/prefer-default-export": "off"
+//    "import/prefer-default-export": "off"
   }
 }
