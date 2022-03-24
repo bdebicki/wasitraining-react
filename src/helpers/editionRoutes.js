@@ -24,10 +24,6 @@ const editionRoutes = [
     url: '/2012',
   },
   {
-    edition: '2012',
-    url: '/2012',
-  },
-  {
     edition: '2011',
     url: '/2011',
   },

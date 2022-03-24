@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
+import Navigation from '../components/Navitation/Navigation';
 
 function Edition({ edition }) {
   useEffect(() => {
@@ -15,6 +16,7 @@ function Edition({ edition }) {
 
   return (
     <div>
+      <Navigation />
       {edition}
     </div>
   );
