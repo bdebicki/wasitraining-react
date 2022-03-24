@@ -13,7 +13,7 @@ function BgVideo({ isBlurred }) {
   );
 
   return (
-    <div id={getComponentClassName()}>
+    <div className={getComponentClassName()}>
       <video
         autoPlay
         className={`${componentClassName}__video`}
@@ -33,7 +33,7 @@ BgVideo.propTypes = {
 };
 
 BgVideo.defaultProps = {
-  isBlurred: false,
+  isBlurred: true,
 };
 
 export default BgVideo;
