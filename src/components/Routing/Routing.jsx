@@ -3,14 +3,23 @@ import { Route, Routes } from 'react-router-dom';
 import editionRoutes from '../../helpers/editionRoutes';
 import Edition from '../../views/Edition';
 import Intro from '../../views/Intro';
+import About from '../../views/About';
+import Cookies from '../../views/Cookies';
 
 function Routing() {
   return (
     <Routes>
       <Route
-        key="root"
         path="/"
         element={<Intro />}
+      />
+      <Route
+        path="/about"
+        element={<About />}
+      />
+      <Route
+        path="/cookies-policy"
+        element={<Cookies />}
       />
       {editionRoutes.map((edition) => (
         <Route
