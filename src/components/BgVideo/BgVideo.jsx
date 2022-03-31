@@ -13,7 +13,7 @@ function BgVideo({ isBlurred }) {
   );
 
   return (
-    <div className={getComponentClassName()}>
+    <div className={getComponentClassName()} style={{ display: 'none' }}>
       <video
         autoPlay
         className={`${componentClassName}__video`}
