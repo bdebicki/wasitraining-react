@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
-import Navigation from '../components/Navitation/Navigation';
+import PageWrapper from '../components/PageWrapper/PageWrapper';
 
 function Edition({ edition }) {
   useEffect(() => {
@@ -15,10 +15,9 @@ function Edition({ edition }) {
   }, [edition]);
 
   return (
-    <div>
-      <Navigation />
+    <PageWrapper>
       {edition}
-    </div>
+    </PageWrapper>
   );
 }
 

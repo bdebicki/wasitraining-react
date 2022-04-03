@@ -1,10 +1,11 @@
 import React from 'react';
+import PageWrapper from '../components/PageWrapper/PageWrapper';
 
 function Cookies() {
   return (
-    <div>
+    <PageWrapper>
       Cookies page
-    </div>
+    </PageWrapper>
   );
 }
 
